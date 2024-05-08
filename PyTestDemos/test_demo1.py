@@ -1,6 +1,6 @@
 import pytest
 
-def test_addition():
+def test_addition(Greating):
     a = 5+10
     assert a==15
 
@@ -17,7 +17,7 @@ def test_subs():
    assert num == 50
 
 @pytest.mark.xfail
-def test_div():
+def test_div(Greating):
    num = 100//50
    print(num)
    assert num == 3
