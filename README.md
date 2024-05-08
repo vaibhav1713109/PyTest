@@ -70,6 +70,7 @@ def test_addition():
     ```
 
 **2. Fixtures:**  The fixture will called befor test executions.   
+[Fixture Example](./Selenium_practice/pytest_fixture.py)
 ```
     import pytest
     ## the fixture will called befor test execution
@@ -81,11 +82,11 @@ def test_addition():
         print('Fixture is called.')
 ```
     
-- pytest test_demo1.py 
+- pytest pytest_fixture.py 
 ```
-test_demo1.py::test_fixture_called Hello I am a fixture!!
+PyTestDemos/pytest_fixture.py::test_fixture_called Hello I am a fixture!!
 Fixture is called.
 PASSED
 
-================================================= 1 passed in 0.04s =================================================
+================================================= 1 passed in 0.01s =================================================
 ```
