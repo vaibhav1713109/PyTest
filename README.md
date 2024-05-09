@@ -68,6 +68,9 @@ def test_addition():
 
     ================================================= 2 passed, 1 skipped, 1 xfailed in 0.04s =================================================
     ```
+- **pytest --collect-only :** It is used to check how many test are selected without run them.  
+- **pytest --lf :** It is used to run the last run failed tests.  
+- **pytest --ff :** It is used to run the last run failed first then passing one cases.  
 
 **2. Fixtures:**  The fixture will called befor test executions and after the test execution   
 [Fixture Example](./PyTestDemos/pytest_fixture.py)
@@ -188,7 +191,7 @@ def test_callFixture_pram(fixture_pram):
     print(fixture_pram)
 ``` 
 
-## ***################ Looging ################***  
+## ***################ Logging ################***  
 ```
 Logging allows you to track events that happen during the execution of a program. It's a crucial tool for debugging, monitoring, and analyzing the behavior of your application.
 ```
