@@ -7,7 +7,7 @@
 - **Command-line usage:** Pytest is invoked from the command line with various options to run, select, and configure tests.  
 
 ***################ Essential Commands ################***  
-[Example file1](./Selenium_practice/test_demo1.py)
+[Example file1](./PyTestDemos/test_demo1.py)
 ```
 #define test >> start a function with name "test_"
 def test_addition():
@@ -70,7 +70,7 @@ def test_addition():
     ```
 
 **2. Fixtures:**  The fixture will called befor test executions and after the test execution   
-[Fixture Example](./Selenium_practice/pytest_fixture.py)
+[Fixture Example](./PyTestDemos/pytest_fixture.py)
 ```
     import pytest
     ## the fixture will called befor test execution
@@ -96,9 +96,9 @@ PASSEDI will execute after test completion.
 ```
 
 **3. Conftest:**  The conftest.py will be used to define common fixture and method which will be used in the test_*.py files inside test working directory  
-[conftest.py Example](./Selenium_practice/conftest.py) >> One greating fixture defined inside it   
-[test_demo1.py Example with calling greating fixture](./Selenium_practice/test_demo1.py) >> Greating fixture called in test_demo1.py  
-[pytest_fixture.py Example](./Selenium_practice/pytest_fixture.py) >> Greating fixture called in pytest_fixture.py  
+[conftest.py Example](./PyTestDemos/conftest.py) >> One greating fixture defined inside it   
+[test_demo1.py Example with calling greating fixture](./PyTestDemos/test_demo1.py) >> Greating fixture called in test_demo1.py  
+[pytest_fixture.py Example](./PyTestDemos/pytest_fixture.py) >> Greating fixture called in pytest_fixture.py  
 ```
 @pytest.fixture
 def Greating():
@@ -132,7 +132,7 @@ I will execute after test completion, Bye!!
 
 **4. Fixture Scope:**  The fixture have function, class, module and Session level scops.  
 
-[fixture on multiple Method Example](./Selenium_practice/test_fixture_in_multiple_method.py)   
+[fixture on multiple Method Example](./PyTestDemos/test_fixture_in_multiple_method.py)   
 ```
 PyTestDemos/test_fixture_in_multiple_method.py::TestExample::test_fixture_called Hello I am a fixture!! and I will be executed before test started
 test_fixture_called : Greating fixture is called.
@@ -153,7 +153,7 @@ PASSEDI will execute after test completion, Bye!!
 
 ============================================================ 4 passed in 0.02s =============================================================
 ```
-[Class level fixture](./Selenium_practice/test_fixture_class_scope.py)   
+[Class level fixture](./PyTestDemos/test_fixture_class_scope.py)   
 ```
 @pytest.fixture(scope='class')
 def Greating2():
@@ -177,8 +177,8 @@ PASSEDI will execute after the class scope finished, Bye!!
 ```
 
 **5. Fixture Parametrize:**  We can pass parameters via fixture as well  
-[conftest.py Example](./Selenium_practice/conftest.py) >> One greating fixture defined inside it    
-[fixture params](./Selenium_practice/test_fixture_parameterize.py)  
+[conftest.py Example](./PyTestDemos/conftest.py) >> One greating fixture defined inside it    
+[fixture params](./PyTestDemos/test_fixture_parameterize.py)  
 ```
 @pytest.fixture(params=['CHrome','FireFox'])
 def fixture_pram(request):
@@ -187,3 +187,10 @@ def fixture_pram(request):
 def test_callFixture_pram(fixture_pram):
     print(fixture_pram)
 ``` 
+
+## ***################ Looging ################***  
+```
+Logging allows you to track events that happen during the execution of a program. It's a crucial tool for debugging, monitoring, and analyzing the behavior of your application.
+```
+[Logging Example](./LoggingEx/test_logging.py)  
+[Logging Example](./LoggingEx/logger_method.py)  
