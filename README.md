@@ -188,7 +188,7 @@ def test_callFixture_pram(fixture_pram):
     print(fixture_pram)
 ``` 
 
-## ***################ Looging ################***  
+## ***################ Logging ################***  
 ```
 Logging allows you to track events that happen during the execution of a program. It's a crucial tool for debugging, monitoring, and analyzing the behavior of your application.
 ```
